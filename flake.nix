@@ -37,6 +37,7 @@
         buildInputs = [ arangodb ];
       };
       packages.default = arangodb;
+      hydraJobs.build = velocypack;
     }
   );
 }
