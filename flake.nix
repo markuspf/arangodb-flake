@@ -26,6 +26,10 @@
         nativeBuildInputs = [
           clang
           cmake
+          git
+          python3
+          openssl
+          openldap
         ];
         buildPhase = "make -j $NIX_BUILD_CORES";
         installPhase = ''
@@ -37,7 +41,7 @@
         buildInputs = [ arangodb ];
       };
       packages.default = arangodb;
-      hydraJobs.build = velocypack;
+      hydraJobs.build = arangodb;
     }
   );
 }
