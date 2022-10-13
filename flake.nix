@@ -20,7 +20,7 @@
         version = "git";
         src = pkgs.fetchgit {
           url = "https://github.com/arangodb/arangodb.git";
-          sha256 = "sha256-NRBOFgcag9R7RTkBUHDqKjsNghUyk/Oq3XVMROsWry4=";
+          sha256 = "sha256-k5kFj+WK1USu/2vyU6yvvImj7v2ZLAZuaZjanJm73xA=";
           rev = "569485bd10025c4d526fe535d94f4f97dab48d61";
         };
         nativeBuildInputs = [
